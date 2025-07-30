@@ -1,0 +1,119 @@
+import { Mail, Linkedin, Twitter, Github } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+const Footer = () => {
+  const quickLinks = [
+    { name: 'About Us', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Our Projects', href: '/projects' },
+    { name: 'Contact Us', href: '/contact' }
+  ];
+
+  const services = [
+    { name: 'Application Development', href: '/services' },
+    { name: 'Cloud Solutions', href: '/services' },
+    { name: 'Cybersecurity', href: '/services' },
+    { name: 'Data & Analytics', href: '/services' }
+  ];
+
+  const socialLinks = [
+    { name: 'LinkedIn', icon: Linkedin, href: '#' },
+    { name: 'Twitter', icon: Twitter, href: '#' },
+    { name: 'GitHub', icon: Github, href: '#' },
+    { name: 'Email', icon: Mail, href: 'mailto:contact@techrangeit.clone' }
+  ];
+
+  return (
+    <footer className="bg-navy text-white py-16">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="grid md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="space-y-4">
+            <h3 className="text-2xl font-bold">
+              Tech<span className="text-accent">Range</span> IT
+            </h3>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Your partner in digital innovation. We build solutions that drive progress and inspire change.
+            </p>
+            <div className="flex space-x-4">
+              {socialLinks.slice(0, 3).map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  className="w-8 h-8 bg-gray-700 hover:bg-accent rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  aria-label={social.name}
+                >
+                  <social.icon className="w-4 h-4" />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-white">Quick Links</h4>
+            <ul className="space-y-3">
+              {quickLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-gray-300 hover:text-accent transition-colors duration-200 text-sm"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Our Services */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-white">Our Services</h4>
+            <ul className="space-y-3">
+              {services.map((service) => (
+                <li key={service.name}>
+                  <Link
+                    to={service.href}
+                    className="text-gray-300 hover:text-accent transition-colors duration-200 text-sm"
+                  >
+                    {service.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-white">Contact</h4>
+            <div className="space-y-3 text-sm">
+              <p className="text-gray-300">
+                123 Innovation Drive, Tech City, 54321
+              </p>
+              <p className="text-gray-300">
+                contact@techrangeit.clone
+              </p>
+              <p className="text-gray-300">
+                +1 (555) 123-4567
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-gray-700 mt-12 pt-8 text-center">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400 text-sm">
+              © 2024 TechRangeIT Solutions. All rights reserved.
+            </p>
+            <p className="text-gray-400 text-sm">
+              Innovate. Integrate. Inspire.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TechRangeIT Solutions Design System - Professional IT Consulting Theme
+All colors MUST be HSL for consistency.
+Blue/Teal Technology Theme
+*/
+
+@layer base {
+  :root {
+    --background: 213 93% 16%;
+    --foreground: 0 0% 98%;
+
+    --card: 213 80% 20%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 213 80% 20%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Primary: Vibrant teal accent */
+    --primary: 180 100% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 180 100% 30%;
+
+    /* Secondary: Dark blue for subtle elements */
+    --secondary: 213 70% 25%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 213 70% 25%;
+    --muted-foreground: 200 20% 70%;
+
+    /* Accent: Bright teal for highlights */
+    --accent: 180 100% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 60% 30%;
+    --input: 213 60% 30%;
+    --ring: 180 100% 25%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens for TechRangeIT - Blue/Teal Theme */
+    --navy: 213 93% 16%;
+    --navy-light: 213 80% 20%;
+    --tech-teal: 180 100% 25%;
+    --tech-blue: 210 100% 50%;
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 25%), hsl(210 100% 50%));
+    --gradient-subtle: linear-gradient(180deg, hsl(213 93% 16%), hsl(213 80% 20%));
+    --gradient-hero: linear-gradient(135deg, hsl(180 100% 25% / 0.1), hsl(210 100% 50% / 0.1));
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.4), 0 2px 4px -1px hsl(0 0% 0% / 0.3);
+    --shadow-card-hover: 0 10px 15px -3px hsl(0 0% 0% / 0.5), 0 4px 6px -2px hsl(0 0% 0% / 0.4);
+    --shadow-hero: 0 25px 50px -12px hsl(180 100% 25% / 0.4);
+    --shadow-teal-glow: 0 0 40px hsl(180 100% 25% / 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 213 93% 12%;
+    --foreground: 0 0% 98%;
+
+    --card: 213 80% 18%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 213 80% 18%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 180 100% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 70% 22%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 213 70% 22%;
+    --muted-foreground: 200 20% 75%;
+
+    --accent: 180 100% 30%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 213 60% 25%;
+    --input: 213 60% 25%;
+    --ring: 180 100% 30%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+
+  /* Smooth scrolling for the entire page */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Card components with semi-3D effect */
+  .card-3d {
+    @apply bg-card border border-border rounded-lg transition-all duration-300 transform-gpu;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-3d:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: scale(1.05);
+  }
+
+  .card-feature {
+    @apply bg-card border border-border rounded-lg p-6 cursor-pointer transition-all duration-300 transform-gpu;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-feature:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: scale(1.05);
+  }
+
+  .card-service {
+    @apply bg-card border border-border rounded-lg p-8 text-center cursor-pointer transition-all duration-300 transform-gpu;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-service:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: scale(1.05);
+    background: linear-gradient(to bottom right, hsl(180 100% 25% / 0.1), hsl(210 100% 50% / 0.1));
+  }
+
+  /* Button variants using design system */
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 
+           rounded-lg font-semibold transition-all duration-300
+           shadow-lg hover:shadow-xl transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/80 text-secondary-foreground px-6 py-3
+           rounded-lg font-medium transition-all duration-300
+           border border-border hover:border-primary/20;
+  }
+
+  /* Gradient text effect */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(180 100% 25%), hsl(210 100% 50%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Network Animation Background */
+  .network-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  /* Header with blur on scroll */
+  .header-blur {
+    @apply transition-all duration-300;
+  }
+
+  .header-blur.scrolled {
+    backdrop-filter: blur(10px);
+    background-color: rgba(2, 46, 82, 0.8);
+    border-bottom: 1px solid hsl(180 100% 25% / 0.2);
+  }
+
+  /* Hero section styling */
+  .hero-text {
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold leading-tight;
+  }
+
+  /* Animation classes */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
