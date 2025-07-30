@@ -33,7 +33,7 @@ const AboutUs = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-background via-background to-primary/5">
+      <section className="pt-20 pb-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in-up">
@@ -47,7 +47,7 @@ const AboutUs = () => {
       </section>
 
       {/* Company Story Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -89,7 +89,7 @@ const AboutUs = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      <section className="py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -125,7 +125,7 @@ const AboutUs = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

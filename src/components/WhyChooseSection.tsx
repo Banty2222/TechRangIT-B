@@ -25,7 +25,7 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <section id="why-choose" className="py-20 bg-gradient-to-br from-secondary/30 to-accent/5">
+    <section id="why-choose" className="py-20">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">

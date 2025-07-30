@@ -44,7 +44,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center justify-center space-x-8 lg:space-x-12 xl:space-x-16">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -57,40 +57,76 @@ const Header = () => {
           </nav>
 
           {/* Mobile menu button */}
+
           <div className="md:hidden">
+
             <button
+
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+
               className="text-foreground hover:text-primary p-2"
+
             >
+
               {isMenuOpen ? (
+
                 <X className="h-6 w-6" />
+
               ) : (
+
                 <Menu className="h-6 w-6" />
+
               )}
+
             </button>
+
           </div>
+
         </div>
 
+
+
         {/* Mobile Navigation */}
+
         {isMenuOpen && (
+
           <div className="md:hidden bg-background border-t border-border">
+
             <div className="px-2 pt-2 pb-3 space-y-1">
+
               {navigation.map((item) => (
+
                 <Link
+
                   key={item.name}
+
                   to={item.href}
+
                   onClick={() => setIsMenuOpen(false)}
+
                   className="block w-full text-left px-3 py-2 text-foreground hover:text-primary font-medium transition-colors duration-200"
+
                 >
+
                   {item.name}
+
                 </Link>
+
               ))}
+
             </div>
+
           </div>
+
         )}
+
       </div>
+
     </header>
+
   );
+
 };
+
 
 export default Header;
