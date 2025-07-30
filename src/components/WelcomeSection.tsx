@@ -9,39 +9,30 @@ const WelcomeSection = () => {
   };
 
   return (
-    <section id="welcome" className="py-20 text-white">
-      <div className="w-1/2 mx-auto">
-        <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Text content */}
-            <div className="space-y-6 animate-fade-in-up">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6">
-                Welcome to{' '}
-                <span className="gradient-text">TechRange IT Solutions</span>...!
-              </h2>
-              <h3 className="text-2xl font-semibold text-blue-300 mb-4 md:mb-6">
-                Your Partner in Digital Transformation.
-              </h3>
-              <p className="text-lg text-blue-200 leading-relaxed mb-4 md:mb-6">
-                At TechRange IT Solutions, we specialize in delivering innovative technology solutions{' '}
-                that empower businesses to thrive in the digital age. From IT consulting and staffing{' '}
-                to cutting-edge software development and AI-driven automation, we're your trusted{' '}
-                partner for comprehensive digital transformation.
+    <section className="py-20">
+    <div className="container mx-auto px-6">
+      <div className="bg-black/20 p-6 sm:p-8 md:p-12 rounded-lg shadow-xl">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-1/2">
+            <h2 className="font-bold text-white mb-2 animate-child delay-1">
+              <span className="text-xl md:text-2xl align-bottom">Welcome to </span>
+              <span className="text-2xl md:text-3xl">Tech<span className="text-accent-teal">Range</span> IT</span>
+              <span className="text-xl md:text-2xl align-bottom"> Solution's...!</span>
+            </h2>
+            <h3 className="text-lg font-bold text-white mb-4 animate-child delay-2">Your Partner in Digital Transformation</h3>
+            <p className="text-gray-300 mb-6 animate-child delay-3">
+            At TechRange IT Solutions, we are dedicated to transforming technology into powerful business solutions. With a focus on innovation, precision, and expertise, we partner with businesses to provide tailored IT solutions that drive efficiency and growth. We are more than just a staffing agency; we are architects of opportunity in the IT sector, delivering value through strategic workforce solutions and talent management.
               </p>
-              <p className="text-lg text-blue-200 leading-relaxed mb-4 md:mb-6">
-                Based in Hyderabad, we combine local expertise with global standards to help{' '}
-                organizations achieve their technological goals and drive sustainable growth.
+              <p className="text-gray-300 animate-child delay-4">
+              We specialize in offering comprehensive, industry-leading services to connect exceptional IT professionals with businesses in need of expertise. Our understanding of the ever-evolving technology landscape enables us to provide highly effective, bespoke solutions that meet both organizational and individual goals. At TechRange IT Solutions, our commitment to excellence has made us a trusted partner for companies and professionals alike.
               </p>
             </div>
-
-            {/* Right side - Image */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
-              <img
-                src={welcomeImage}
-                alt="Welcome to TechRange IT Solutions"
-                className="rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
-              />
+            <div className="md:w-1/2 animate-child delay-3 md-mask-fade-left">
+              <img 
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                alt="Our team collaborating" 
+                className="rounded-lg shadow-xl"
+                />
             </div>
           </div>
         </div>
