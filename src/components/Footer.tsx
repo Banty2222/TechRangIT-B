@@ -33,10 +33,10 @@ const Footer = () => {
               Your partner in digital innovation. We build solutions that drive progress and inspire change.
             </p>
             <div className="flex space-x-4">
-                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-teal transition-colors"><TwitterIcon /></a>
-                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-teal transition-colors"><FacebookIcon /></a>
                             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-teal transition-colors"><LinkedInIcon /></a>
                             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-teal transition-colors"><InstagramIcon /></a>
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-teal transition-colors"><FacebookIcon /></a>
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-teal transition-colors"><TwitterIcon /></a>  
                         </div>
                     </div>
 

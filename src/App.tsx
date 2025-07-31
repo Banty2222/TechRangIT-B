@@ -9,6 +9,7 @@ import Services from "./pages/Services";
 import OurProjects from "./pages/OurProjects";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
+import SocialMediaBar from './components/SocialMediaBar';
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <SocialMediaBar />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<AboutUs />} />
