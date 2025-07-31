@@ -96,7 +96,7 @@ const ContactUs = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen text-foreground">
       <NetworkBackground />
       <Header />
       
@@ -165,7 +165,7 @@ const ContactUs = () => {
                   Why Choose TechRange IT?
                 </h3>
                 <ul className="space-y-4">
-                  [
+                  {[
                     "Expert team with 10+ years experience",
                     "Proven track record of 100+ successful projects",
                     "24/7 support and maintenance",
