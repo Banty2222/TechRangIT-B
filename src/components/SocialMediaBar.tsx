@@ -10,7 +10,7 @@ const SocialMediaBar = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIsVisible(prev => !prev); // Toggle visibility
-    }, 6000); // 6000ms = 0 seconds
+    }, 6000); // 6000ms = 6 seconds
 
     return () => {
       clearInterval(intervalId); // Clean up the interval on component unmount
@@ -19,22 +19,22 @@ const SocialMediaBar = () => {
 
   return (
     <div
-      className={`fixed top-1/2 transform -translate-y-1/2 right-0 z-50 flex flex-col space-y-4 p-4 bg-gray-0 bg-opacity-500 rounded-l-lg transition-opacity duration-1000 ${
+      className={`fixed top-1/2 transform -translate-y-1/2 right-0 z-50 flex flex-col space-y-4 p-3 bg-gray-0 bg-opacity-50 rounded-l-lg transition-opacity duration-1000 ${
         isVisible ? 'opacity-50' : 'opacity-0 pointer-events-none'
       }`}
     >
-      <a href="#" className="text-white hover:text-accent">
-        <InstagramIcon className="w-10 h-10"/>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent">
+        <InstagramIcon className="w-7 h-7"/>
       </a>
-      <a href="#" className="text-white hover:text-accent">
-        <FacebookIcon className="w-10 h-10"/>
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent">
+        <FacebookIcon className="w-7 h-7"/>
       </a>
-      <a href="#" className="text-white hover:text-accent">
-        <LinkedInIcon className="w-10 h-10"/>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent">
+        <LinkedInIcon className="w-7 h-7"/>
       </a>
-      <a href="#" className="text-white hover:text-accent">
-        <TwitterIcon className="w-10 h-10"/>
-      </a>1
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent">
+        <TwitterIcon className="w-7 h-7"/>
+      </a>
     </div>
   );
 };
