@@ -1,6 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import NetworkBackground from '@/components/NetworkBackground';
+import NetworkBackground from '@/components/CanvasBackground';
 import { Target, Users, Award, Globe } from 'lucide-react';
 
 const AboutUs = () => {

@@ -5,7 +5,7 @@ import WhyChooseSection from '@/components/WhyChooseSection';
 import ServicesSection from '@/components/ServicesSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
-import NetworkBackground from '@/components/NetworkBackground';
+import NetworkBackground from '@/components/CanvasBackground';
 
 const Index = () => {
   return (

@@ -1,6 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import NetworkBackground from '@/components/NetworkBackground';
+import NetworkBackground from '@/components/CanvasBackground';
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { Mail, MapPin, Phone, Clock, Send } from 'lucide-react';

@@ -1,6 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import NetworkBackground from '@/components/NetworkBackground';
+import NetworkBackground from '@/components/CanvasBackground';
 import { Code, Smartphone, Cloud, Shield, BarChart3, Headphones, Cpu, Database } from 'lucide-react';
 
 const Services = () => {

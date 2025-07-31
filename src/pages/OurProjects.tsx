@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import NetworkBackground from '@/components/NetworkBackground';
+import NetworkBackground from '@/components/CanvasBackground';
 import { ExternalLink, Github, Calendar, Users, Tag } from 'lucide-react';
 
 const OurProjects = () => {
