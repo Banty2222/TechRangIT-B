@@ -1,66 +1,46 @@
-const HeroSection = () => {
-  const scrollToNext = () => {
-    const element = document.querySelector('#welcome');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+import React from 'react';
+
+const Hero: React.FC = () => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId.substring(1));
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-16">
-      <div className="relative h-screen flex items-center justify-center text-center overflow-hidden bg-corporate-blue">
+    <section
+      className="relative h-screen flex items-center justify-center text-center overflow-hidden bg-corporate-blue"
+      >
         <video
-          src="/home/user/techrangeit-test1/public/HomePage_video.mp4"
+          src="/src/assets/hero-digital-transformation.mp4"
           autoPlay
           loop
           muted
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover"
           aria-hidden="true"
-        >
+          >
           Your browser does not support the video tag.
         </video>
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <div className="max-w-5xl mx-auto animate-fade-in-up">
-            <h1 className="hero-text mb-8">
-              <span className="gradient-text">INNOVATE.</span>
-              <br />
-              <span className="gradient-text">INTEGRATE.</span>
-              <br />
-              <span className="gradient-text">INSPIRE.</span>
-            </h1>
-
-            <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              We deliver cutting-edge technology solutions that drive growth, efficiency, and success for your business.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button
-                onClick={scrollToNext}
-                className="btn-primary animate-scale-in"
-              >
-                Get Started
-              </button>
-              <button
-                onClick={() => document.querySelector('#why-choose')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn-secondary animate-scale-in"
-                style={{ animationDelay: '0.2s' }}
-              >
-                Why Choose Us
-              </button>
-            </div>
-          </div>
-
-          {/* Scroll indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
-            </div>
-          </div>
-        </div>
+        <div className="relative z-10 px-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white leading-tight mb-12 animate-child delay-1 [text-shadow:4px_4px_0_rgba(0,0,0,0.4)]">
+            INNOVATE. INTEGRATE. INSPIRE.
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl font-medium text-gray-200 max-w-3xl mx-auto mb-12 animate-child delay-2 [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">
+            We deliver cutting-edge technology solutions that drive growth, efficiency, and success for your business.
+          </p>
+          <a
+          href="#contact"
+          onClick={(e) => handleNavClick(e, '#contact')}
+          className="bg-gradient-to-r from-accent-teal to-corporate-blue text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 text-lg shadow-md animate-child delay-3 opacity-90 hover:opacity-100"
+        >
+          Get Started
+        </a>
       </div>
     </section>
   );
 };
 
-export default HeroSection;
+export default Hero;
