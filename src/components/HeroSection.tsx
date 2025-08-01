@@ -31,13 +31,13 @@ const Hero: React.FC = () => {
           <p className="text-lg sm:text-xl md:text-2xl font-medium text-gray-200 max-w-3xl mx-auto mb-12 animate-child delay-2 [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">
             We deliver cutting-edge technology solutions that drive growth, efficiency, and success for your business.
           </p>
-          <a
-          href="#contact"
-          onClick={(e) => handleNavClick(e, '#contact')}
-          className="bg-gradient-to-r from-accent-teal to-corporate-blue text-white font-bold py-4 px-10 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 text-lg shadow-md animate-child delay-3 opacity-90 hover:opacity-100"
-        >
-          Get Started
-        </a>
+          <button
+  href="#contact"
+  onClick={(e) => handleNavClick(e, '#contact')}
+  className="btn-primary hover:shadow-3xl hover:scale-105 transition duration-300"
+>
+         Get Started
+         </button>
       </div>
     </section>
   );

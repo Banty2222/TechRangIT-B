@@ -29,7 +29,7 @@ const WhyChooseSection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Why Choose <span className="gradient-text">TechRangeIT</span>?
+            Why Choose <span className="text-4xl md:text-5xl">Tech<span className="text-accent">Range</span> IT</span>..?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Discover what sets us apart in the competitive world of IT consulting and software development.

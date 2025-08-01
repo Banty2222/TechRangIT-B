@@ -33,7 +33,7 @@ const SocialMediaBar = () => {
         <LinkedInIcon className="w-2 h-2"/>
       </a>
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent">
-        <TwitterIcon className="w-0 h-0"/>
+        <TwitterIcon className="w-2 h-2"/>
       </a>
     </div>
   );

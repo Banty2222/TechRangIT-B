@@ -16,7 +16,7 @@ const WelcomeSection = () => {
           <div className="md:w-1/2">
             <h2 className="font-bold text-white mb-2 animate-child delay-1">
               <span className="text-xl md:text-2xl align-bottom">Welcome to </span>
-              <span className="text-2xl md:text-3xl">Tech<span className="text-accent-teal">Range</span> IT</span>
+              <span className="text-2xl md:text-3xl">Tech<span className="text-accent">Range</span> IT</span>
               <span className="text-xl md:text-2xl align-bottom"> Solution's...!</span>
             </h2>
             <h3 className="text-lg font-bold text-white mb-4 animate-child delay-2">Your Partner in Digital Transformation</h3>

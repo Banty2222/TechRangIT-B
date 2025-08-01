@@ -152,9 +152,8 @@ Blue/Teal Technology Theme
   }
 
   .card-service {
-    @apply border border-border rounded-lg p-8 text-center cursor-pointer transition-all duration-300 transform-gpu;
+    @apply bg-card border border-border rounded-lg p-8 text-center cursor-pointer transition-all duration-300 transform-gpu;
     box-shadow: var(--shadow-card);
-    background-color: transparent;
   }
 
   .card-service:hover {
