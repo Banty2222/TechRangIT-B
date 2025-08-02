@@ -24,16 +24,16 @@ const SocialMediaBar = () => {
       }`}
     >
       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent">
-        <InstagramIcon className="w-2 h-2"/>
+        <InstagramIcon className="w-7 h-7"/>
       </a>
       <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent">
-        <FacebookIcon className="w-2 h-2"/>
+        <FacebookIcon className="w-7 h-7"/>
       </a>
       <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent">
-        <LinkedInIcon className="w-2 h-2"/>
+        <LinkedInIcon className="w-7 h-7"/>
       </a>
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent">
-        <TwitterIcon className="w-2 h-2"/>
+        <TwitterIcon className="w-7 h-7"/>
       </a>
     </div>
   );

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const LinkedInIcon = () => (
+const LinkedInIcon: React.FC<{ className?: string }> = ({ className }) => (
   <svg
-    className="w-6 h-6"
+    className={className || "w-6 h-6"}
     fill="currentColor"
     viewBox="0 0 24 24"
     aria-hidden="true"

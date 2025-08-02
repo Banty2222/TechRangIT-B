@@ -21,13 +21,6 @@ const Header = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const handleSmoothScrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -45,11 +38,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" onClick={handleSmoothScrollToTop}>
-              <h1 className="text-2xl font-bold text-white">
-                Tech<span className="text-accent">Range</span> IT
-              </h1>
-            </Link>
+            <h1 className="text-2xl font-bold text-white">
+              Tech<span className="text-accent">Range</span> IT
+            </h1>
           </div>
 
           {/* Desktop Navigation */}
