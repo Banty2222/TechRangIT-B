@@ -60,6 +60,7 @@ export default {
 				'navy-light': 'hsl(var(--navy-light))',
 				'tech-blue': 'hsl(var(--tech-blue))',
 				'tech-cyan': 'hsl(var(--tech-cyan))',
+				'footer-blue': 'hsl(var(--footer-blue))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
