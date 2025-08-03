@@ -26,3 +26,14 @@
 .social-sidebar a:hover {
   color: #00aaff;
 }
+
+.header-blur {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header-blur.scrolled {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
