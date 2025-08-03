@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
           <button
   href="#contact"
   onClick={(e) => handleNavClick(e, '#contact')}
-  className="btn-primary hover:shadow-3xl hover:scale-105 transition duration-300"
+  className="  btn-primary hover:shadow-3xl hover:scale-110 transition duration-300"
 >
          Get Started
          </button>
