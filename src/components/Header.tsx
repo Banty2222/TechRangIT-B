@@ -15,10 +15,17 @@ const Header = () => {
     { name: 'Contact Us', href: '/contact' },
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   // Scroll to the top of the page whenever the path changes.
   // This ensures that navigating to a new page starts from the beginning.
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTop();
   }, [pathname]);
 
   useEffect(() => {
@@ -38,9 +45,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-white">
-              Tech<span className="text-accent">Range</span> IT
-            </h1>
+            <Link to="/" onClick={scrollToTop}>
+              <h1 className="text-2xl font-bold text-white">
+                Tech<span className="text-accent">Range</span> IT
+              </h1>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -49,6 +58,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
+                onClick={scrollToTop}
                 className="text-foreground hover:text-primary font-medium transition-colors duration-200 hover:scale-105 transform"
               >
                 {item.name}
@@ -102,7 +112,10 @@ const Header = () => {
 
                   to={item.href}
 
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    scrollToTop();
+                  }}
 
                   className="block w-full text-left px-3 py-2 text-foreground hover:text-primary font-medium transition-colors duration-200"
 

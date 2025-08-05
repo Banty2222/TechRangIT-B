@@ -198,7 +198,13 @@ Blue/Teal Technology Theme
   /* Header with blur on scroll */
   .header-blur {
     @apply transition-all duration-300;
-    background-color: transparent; /* Add transparent background by default */
+    background-color: transparent;
+  }
+
+  .header-blur.scrolled {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   /* Hero section styling */
