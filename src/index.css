@@ -220,6 +220,11 @@ Blue/Teal Technology Theme
   .animate-scale-in {
     animation: scaleIn 0.6s ease-out forwards;
   }
+
+  .md-mask-fade-left {
+    mask-image: linear-gradient(to right, transparent, black 20%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%);
+  }
 }
 
 /* Custom animations */
