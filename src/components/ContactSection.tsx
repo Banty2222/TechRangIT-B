@@ -107,28 +107,28 @@ const ContactSection = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <input
                   type="text"
-                  name="name"
-                  value={formData.name}
+                  name="firstname"
+                  value={formData.firstname}
                   onChange={handleInputChange}
                   className="w-full bg-white/5 text-white p-3 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500"
-                  placeholder="Your Name"
+                  placeholder="Your First Name"
                 />
                 <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
+                  type="text"
+                  name="lastname"
+                  value={formData.lastemail}
                   onChange={handleInputChange}
                   className="w-full bg-white/5 text-white p-3 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500"
-                  placeholder="Your Email"
+                  placeholder="Your Last Name"
                 />
               </div>
               <input
-                type="text"
-                name="subject"
-                value={formData.subject}
+                type="email"
+                name="email"
+                value={formData.email}
                 onChange={handleInputChange}
                 className="w-full bg-white/5 text-white p-3 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500"
-                placeholder="Subject"
+                placeholder="Your Email"
               />
               <textarea
                 name="message"
