@@ -22,7 +22,7 @@ const ContactSection = () => {
     e.preventDefault();
     
     // Basic validation
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+    if (!formData.firstname || !formData.lastname || !formData.email || !formData.message) {
       toast({
         title: "Please fill in all fields",
         description: "All fields are required to submit the form.",
@@ -102,33 +102,33 @@ const ContactSection = () => {
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="w-full">
                     <input
-                      placeholder="Your Name"
+                      placeholder="Your First Name"
                       className="w-full bg-white/10 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary placeholder-gray-400 transition-shadow"
                       type="text"
-                      value={formData.name}
-                      name="name"
+                      value={formData.firstname}
+                      name="firstname"
                       onChange={handleInputChange}
                     />
                   </div>
                   <div className="w-full">
                     <input
-                      placeholder="Your Email"
+                      placeholder="Your Last Name"
                       className="w-full bg-white/10 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary placeholder-gray-400 transition-shadow"
-                      type="email"
-                      value={formData.email}
-                      name="email"
+                      type="text"
+                      value={formData.lastname}
+                      name="lastname"
                       onChange={handleInputChange}
                     />
                   </div>
                 </div>
                 <div>
                   <input
-                    placeholder="Subject"
-                    className="w-full bg-white/10 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary placeholder-gray-400 transition-shadow"
-                    type="text"
-                    value={formData.subject}
-                    name="subject"
-                    onChange={handleInputChange}
+                   placeholder="Your Email"
+                   className="w-full bg-white/10 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary placeholder-gray-400 transition-shadow"
+                   type="email"
+                   value={formData.email}
+                   name="email"
+                   onChange={handleInputChange}
                   />
                 </div>
                 <div>
