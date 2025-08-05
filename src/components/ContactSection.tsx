@@ -47,107 +47,109 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-12 ">
-      <div className="container mx-auto px-6">
-        <div className="bg-black/20 p-6 sm:p-8 md:p-12 rounded-lg shadow-xl animate-child delay-5">
-          <div className="text-center mb-8">
+    <section id="contact" className="py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             We're here to help you transform your business with innovative technology solutions. Reach out to us and let's discuss how we can accelerate your digital journey.
           </p>
-      
         </div>
-        <div className="grid lg:grid-cols-5 gap-8 max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
-          {/* Contact Information */}
-          <div className="lg:col-span-2 space-y-4">
-            <div>
-              <h3 className="text-3xl font-semibold text-foreground mb-4">Contact Information</h3>
-              <p className="text-lg text-muted-foreground mb-4">
+        <div className="bg-black/20 p-8 md:p-12 rounded-lg shadow-xl">
+          <div className="grid lg:grid-cols-5 gap-12">
+            {/* Contact Information */}
+            <div className="lg:col-span-2 space-y-8">
+              <h3 className="text-2xl font-semibold text-foreground">Contact Information</h3>
+              <p className="text-lg text-muted-foreground">
                 Have a project in mind or just want to say hello? We'd love to hear from you.
               </p>
-            </div>
-
-            <div className="space-y-4">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-white" />
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">Phone</h4>
+                    <p className="text-muted-foreground">+91 9999999999</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-foreground mb-1">Phone</h4>
-                  <p className="text-muted-foreground">+91 9999999999</p>
+                <div className="flex items-center space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">Email</h4>
+                    <p className="text-muted-foreground">contact@techrangeit.com</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-foreground mb-1">Email</h4>
-                  <p className="text-muted-foreground">contact@techrangeit.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-foreground mb-1">Address</h4>
-                  <p className="text-muted-foreground">123 Innovation Drive, Tech City, 54321</p>
+                <div className="flex items-center space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                    <MapPin className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">Address</h4>
+                    <p className="text-muted-foreground">123 Innovation Drive, Tech City, 54321</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Contact Form */}
-          <div className="lg:col-span-3">
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  name="firstname"
-                  value={formData.firstname}
-                  onChange={handleInputChange}
-                  className="w-full bg-white/5 text-white p-3 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500"
-                  placeholder="Your First Name"
-                />
-                <input
-                  type="text"
-                  name="lastname"
-                  value={formData.lastemail}
-                  onChange={handleInputChange}
-                  className="w-full bg-white/5 text-white p-3 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500"
-                  placeholder="Your Last Name"
-                />
-              </div>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                className="w-full bg-white/5 text-white p-3 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500"
-                placeholder="Your Email"
-              />
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                rows={3}
-                className="w-full bg-white/5 text-white p-3 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500"
-                placeholder="Your Message"
-              />
-              <button
-                type="submit"
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
-              >
-                <Send className="w-5 h-5" />
-                <span>Send Message</span>
-              </button>
-            </form>
+            {/* Contact Form */}
+            <div className="lg:col-span-3">
+              <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="w-full">
+                    <input
+                      placeholder="Your Name"
+                      className="w-full bg-white/10 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary placeholder-gray-400 transition-shadow"
+                      type="text"
+                      value={formData.name}
+                      name="name"
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                  <div className="w-full">
+                    <input
+                      placeholder="Your Email"
+                      className="w-full bg-white/10 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary placeholder-gray-400 transition-shadow"
+                      type="email"
+                      value={formData.email}
+                      name="email"
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <input
+                    placeholder="Subject"
+                    className="w-full bg-white/10 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary placeholder-gray-400 transition-shadow"
+                    type="text"
+                    value={formData.subject}
+                    name="subject"
+                    onChange={handleInputChange}
+                  />
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    rows={5}
+                    className="w-full bg-white/10 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary placeholder-gray-400 transition-shadow"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-primary to-accent text-white font-bold py-3 px-6 rounded-md hover:shadow-lg hover:scale-105 transition-all duration-300 shadow-md disabled:opacity-75 disabled:cursor-not-allowed"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
