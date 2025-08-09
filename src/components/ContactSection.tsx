@@ -5,9 +5,9 @@ import { useToast } from '@/hooks/use-toast';
 const ContactSection = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: '',
+    firstname: '',
+    lastname: '',
     email: '',
-    subject: '',
     message: ''
   });
 
@@ -39,17 +39,17 @@ const ContactSection = () => {
 
     // Reset form
     setFormData({
-      name: '',
+      firstname: '',
+      lastname: '',
       email: '',
-      subject: '',
       message: ''
     });
   };
 
   return (
     <section id="contact" className="py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+      <div className="w-full px-4">
+        <div className="text-center mb-12 px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Get In <span className="gradient-text">Touch</span>
           </h2>
@@ -57,10 +57,9 @@ const ContactSection = () => {
             We're here to help you transform your business with innovative technology solutions. Reach out to us and let's discuss how we can accelerate your digital journey.
           </p>
         </div>
-        <div className="bg-black/20 p-8 md:p-12 rounded-lg shadow-xl">
-          <div className="grid lg:grid-cols-5 gap-12">
+        <div className="flex flex-col lg:flex-row gap-15 bg-black/20 p-6 sm:p-8 md:p-12 rounded-lg shadow-xl">
             {/* Contact Information */}
-            <div className="lg:col-span-2 space-y-8">
+            <div className="lg:w-1/3 space-y-8">
               <h3 className="text-2xl font-semibold text-foreground">Contact Information</h3>
               <p className="text-lg text-muted-foreground">
                 Have a project in mind or just want to say hello? We'd love to hear from you.
@@ -97,7 +96,7 @@ const ContactSection = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="lg:col-span-3">
+            <div className="lg:w-2/3">
               <form onSubmit={handleSubmit} className="space-y-4" noValidate>
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="w-full">
@@ -149,7 +148,6 @@ const ContactSection = () => {
                 </button>
               </form>
             </div>
-          </div>
         </div>
       </div>
     </section>
