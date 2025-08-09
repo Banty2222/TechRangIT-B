@@ -76,12 +76,17 @@ const ServicesSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button 
-            onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-            className="btn-primary"
-          >
-            Get Started Today
-          </button>
+          <button
+  onClick={() =>
+    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
+  }
+  className=" bg-gradient-to-r from-accent to - corporate-blue-600 text-white font-bold py-5 px-6 rounded-lg
+             shadow-lg transform transition duration-300
+             hover:scale-105 hover:shadow-pl"
+>
+  Get Started Today
+</button>
+
         </div>
       </div>
     </section>

@@ -34,10 +34,13 @@ const Hero: React.FC = () => {
           <button
   href="#contact"
   onClick={(e) => handleNavClick(e, '#contact')}
-  className="  btn-primary hover:shadow-3xl hover:scale-110 transition duration-300"
+  className="btn-primary bg-gradient-to-r from-accent to-corporate-blue 
+             text-white font-bold rounded-lg 
+             shadow-lg transform transition duration-300
+             hover:scale-105 hover:shadow-lg"            
 >
-         Get Started
-         </button>
+  Get Started
+</button>
       </div>
     </section>
   );
