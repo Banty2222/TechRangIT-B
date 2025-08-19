@@ -101,7 +101,7 @@ const ContactUs = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16">
+      <section className="pt-20 pb-10 bg-gradient-to-br from-background via-background to-primary/5">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in-up">
@@ -197,6 +197,7 @@ const ContactUs = () => {
                     <span className="text-sm font-medium text-primary">Immediate</span>
                   </div>
                   <div className="flex justify-between">
+                    <span className="text-sm text-muted-foreground">Form:</span>
                     <span className="text-sm font-medium text-primary">24 hours</span>
                   </div>
                 </div>

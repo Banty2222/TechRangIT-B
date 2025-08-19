@@ -51,30 +51,32 @@ const AboutUs = () => {
       <section className="py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6 animate-fade-in-up">
+            <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+              <div className="space-y-6 animate-fade-in-up flex flex-col">
                 <h2 className="text-4xl font-bold text-foreground">
                   Our Story
                 </h2>
                 
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  TechRange IT Solutions was founded with a vision to bridge the gap between cutting-edge technology and business success. Based in Hyderabad, we have grown from a small team of passionate technologists to a comprehensive IT solutions provider serving clients globally.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  We specialize in offering comprehensive, industry-leading services to connect exceptional IT professionals with businesses in need of expertise. Our understanding of the ever-evolving technology landscape enables us to provide highly effective, bespoke solutions that meet both organizational and individual goals.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  At TechRange IT Solutions, our commitment to excellence has made us a trusted partner for companies and professionals alike. We are more than just a staffing agency; we are architects of opportunity in the IT sector, delivering value through strategic workforce solutions and talent management.
-                </p>
+                <div className="card-3d p-8 flex-grow">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    TechRange IT Solutions was founded with a vision to bridge the gap between cutting-edge technology and business success. Based in Hyderabad, we have grown from a small team of passionate technologists to a comprehensive IT solutions provider serving clients globally.
+                    </p>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    We specialize in offering comprehensive, industry-leading services to connect exceptional IT professionals with businesses in need of expertise. Our understanding of the ever-evolving technology landscape enables us to provide highly effective, bespoke solutions that meet both organizational and individual goals.
+                    </p>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    At TechRange IT Solutions, our commitment to excellence has made us a trusted partner for companies and professionals alike. We are more than just a staffing agency; we are architects of opportunity in the IT sector, delivering value through strategic workforce solutions and talent management.
+                    </p>
+                </div>
               </div>
-              <div className="relative animate-scale-in">
+              <div className="relative animate-scale-in flex flex-col gap-6">
                 <div className="card-3d p-8 text-center">
                   <div className="space-y-4">
                     <h3 className="text-3xl font-bold text-primary">5+ Years</h3>
                     <p className="text-muted-foreground">Industry Experience</p>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 gap-4 mt-6">
+                <div className="grid grid-cols-2 gap-4">
                   <div className="card-3d p-6 text-center">
                     <h4 className="text-2xl font-bold text-accent">100+</h4>
                     <p className="text-sm text-muted-foreground">Projects Completed</p>
