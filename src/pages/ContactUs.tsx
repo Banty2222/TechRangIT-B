@@ -97,7 +97,7 @@ const ContactUs = () => {
 
   return (
     <div className="min-h-screen">
-      <NetworkBackground />
+<NetworkBackground />
       <Header />
       
       {/* Hero Section */}

@@ -17,14 +17,16 @@ const WelcomeSection = () => {
             {/* Left Text Section */}
             <div className="md:w-1/2">
               <h2 className="font-bold text-white mb-2">
-                <span className="text-xl md:text-2xl align-bottom">Welcome to </span>
-                <span className="text-2xl md:text-3xl">Tech<span className="text-accent">Range</span> IT</span>
-                <span className="text-xl md:text-2xl align-bottom"> Solution's...!</span>
+                <span className="text-3xl md:text-2xl align-bottom">Welcome to </span>
+                <span className="text-4xl md:text-3xl">Tech<span className="text-accent">Range</span> IT</span>
+                <span className="text-3xl md:text-2xl align-bottom"> Solution's...!</span>
               </h2>
               
-              <h3 className="text-lg font-bold text-white mb-4">
+              <h3 className="text-lg font-bold text-white mb-8">
                 Your Partner in Digital Transformation
               </h3>
+
+              
               
               <p className="text-gray-300 mb-6 leading-relaxed">
                 At TechRange IT Solutions, we are dedicated to transforming technology into powerful business solutions. 
