@@ -42,7 +42,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20">
+    <section id="services" className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">

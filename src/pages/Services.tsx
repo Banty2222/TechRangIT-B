@@ -61,7 +61,7 @@ const Services = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-10 bg-gradient-to-br from-background via-background to-primary/5">
+      <section className="pt-20 pb-10 bg-gradient-to-br from-primary/5 via-background to-accent/5">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in-up">
@@ -75,13 +75,14 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
                 key={service.title}
                 className="card-service group"
+                
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex justify-center mb-6">
@@ -110,7 +111,7 @@ const Services = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 p-6 sm:p-8 md:p-12 rounded-lg shadow-xl">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

@@ -48,7 +48,7 @@ const AboutUs = () => {
       </section>
 
       {/* Company Story Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5" >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-stretch">
@@ -58,18 +58,19 @@ const AboutUs = () => {
                 </h2>
                 
                 <div className="card-3d p-8 flex-grow">
-                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed mb-4">
                     TechRange IT Solutions was founded with a vision to bridge the gap between cutting-edge technology and business success. Based in Hyderabad, we have grown from a small team of passionate technologists to a comprehensive IT solutions provider serving clients globally.
                     </p>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    
+                    <p className="text-base text-muted-foreground leading-relaxed mb-4">
                     We specialize in offering comprehensive, industry-leading services to connect exceptional IT professionals with businesses in need of expertise. Our understanding of the ever-evolving technology landscape enables us to provide highly effective, bespoke solutions that meet both organizational and individual goals.
                     </p>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                     At TechRange IT Solutions, our commitment to excellence has made us a trusted partner for companies and professionals alike. We are more than just a staffing agency; we are architects of opportunity in the IT sector, delivering value through strategic workforce solutions and talent management.
                     </p>
                 </div>
               </div>
-              <div className="relative animate-scale-in flex flex-col gap-6">
+              <div className="relative animate-scale-in flex flex-col gap-6 justify-center">
                 <div className="card-3d p-8 text-center">
                   <div className="space-y-4">
                     <h3 className="text-3xl font-bold text-primary">5+ Years</h3>
@@ -93,7 +94,7 @@ const AboutUs = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 ">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -129,7 +130,7 @@ const AboutUs = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 ">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

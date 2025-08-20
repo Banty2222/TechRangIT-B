@@ -115,7 +115,7 @@ const ContactUs = () => {
       </section>
 
       {/* Contact Info Cards */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 ">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {contactInfo.map((info, index) => (
@@ -149,22 +149,22 @@ const ContactUs = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Contact Information */}
-            <div className="lg:col-span-1 space-y-8">
+            <div className="lg:col-span-1 space-y-6">
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-6">
+                <h2 className="text-2xl font-bold text-foreground mb-4">
                   Get In Touch
                 </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                <p className="text-base text-muted-foreground leading-relaxed mb-6">
                   We're here to help you transform your business with innovative technology solutions. 
                   Reach out to us and let's discuss how we can accelerate your digital journey.
                 </p>
               </div>
 
-              <div className="card-3d p-8">
-                <h3 className="text-xl font-semibold text-foreground mb-6">
+              <div className="card-3d p-6">
+                <h3 className="text-lg font-semibold text-foreground mb-4">
                   Why Choose TechRange IT?
                 </h3>
-                <ul className="space-y-4">
+                <ul className="space-y-3">
                   {[
                     "Expert team with 10+ years experience",
                     "Proven track record of 100+ successful projects",
@@ -173,32 +173,32 @@ const ContactUs = () => {
                     "Competitive pricing and flexible terms"
                   ].map((point, index) => (
                     <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-muted-foreground">{point}</span>
+                      <div className="w-2 h-2 bg-primary rounded-full mt-1.5 mr-3 flex-shrink-0"></div>
+                      <span className="text-sm text-muted-foreground">{point}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="card-3d p-8">
-                <h3 className="text-xl font-semibold text-foreground mb-4">
+              <div className="card-3d p-6">
+                <h3 className="text-lg font-semibold text-foreground mb-4">
                   Response Time
                 </h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-sm text-muted-foreground mb-4">
                   We typically respond to inquiries within:
                 </p>
                 <div className="space-y-2">
                   <div className="flex justify-between">
-                    <span className="text-sm text-muted-foreground">Email:</span>
-                    <span className="text-sm font-medium text-primary">2-4 hours</span>
+                    <span className="text-xs text-muted-foreground">Email:</span>
+                    <span className="text-xs font-medium text-primary">2-4 hours</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-muted-foreground">Phone:</span>
-                    <span className="text-sm font-medium text-primary">Immediate</span>
+                    <span className="text-xs text-muted-foreground">Phone:</span>
+                    <span className="text-xs font-medium text-primary">Immediate</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-muted-foreground">Form:</span>
-                    <span className="text-sm font-medium text-primary">24 hours</span>
+                    <span className="text-xs text-muted-foreground">Form:</span>
+                    <span className="text-xs font-medium text-primary">24 hours</span>
                   </div>
                 </div>
               </div>
@@ -207,14 +207,14 @@ const ContactUs = () => {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <div className="card-3d p-8">
-                <h2 className="text-3xl font-bold text-foreground mb-8">
+                <h2 className="text-2xl font-bold text-foreground mb-6">
                   Send Us a Message
                 </h2>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="firstName" className="block text-xs font-medium text-foreground mb-1">
                         First Name *
                       </label>
                       <input
@@ -223,13 +223,13 @@ const ContactUs = () => {
                         name="firstName"
                         value={formData.firstName}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                        className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                         placeholder="Enter your first name"
                         required
                       />
                     </div>
                     <div>
-                      <label htmlFor="lastName" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="lastName" className="block text-xs font-medium text-foreground mb-1">
                         Last Name *
                       </label>
                       <input
@@ -238,16 +238,16 @@ const ContactUs = () => {
                         name="lastName"
                         value={formData.lastName}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                        className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                         placeholder="Enter your last name"
                         required
                       />
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="email" className="block text-xs font-medium text-foreground mb-1">
                         Email Address *
                       </label>
                       <input
@@ -256,13 +256,13 @@ const ContactUs = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                        className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                         placeholder="Enter your email"
                         required
                       />
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="phone" className="block text-xs font-medium text-foreground mb-1">
                         Phone Number
                       </label>
                       <input
@@ -271,15 +271,15 @@ const ContactUs = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                        className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                         placeholder="Enter your phone number"
                       />
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="company" className="block text-xs font-medium text-foreground mb-1">
                         Company Name
                       </label>
                       <input
@@ -288,12 +288,12 @@ const ContactUs = () => {
                         name="company"
                         value={formData.company}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                        className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                         placeholder="Enter your company name"
                       />
                     </div>
                     <div>
-                      <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
+                      <label htmlFor="service" className="block text-xs font-medium text-foreground mb-1">
                         Service Interested In
                       </label>
                       <select
@@ -301,7 +301,7 @@ const ContactUs = () => {
                         name="service"
                         value={formData.service}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                        className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                       >
                         <option value="">Select a service</option>
                         {services.map((service) => (
@@ -314,16 +314,16 @@ const ContactUs = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                    <label htmlFor="message" className="block text-xs font-medium text-foreground mb-1">
                       Message *
                     </label>
                     <textarea
                       id="message"
                       name="message"
-                      rows={6}
+                      rows={4}
                       value={formData.message}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-vertical"
+                      className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-vertical"
                       placeholder="Tell us about your project requirements..."
                       required
                     ></textarea>
@@ -331,9 +331,9 @@ const ContactUs = () => {
 
                   <button
                     type="submit"
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-2"
                   >
-                    <Send className="w-5 h-5" />
+                    <Send className="w-4 h-4" />
                     Send Message
                   </button>
                 </form>
@@ -344,7 +344,7 @@ const ContactUs = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
