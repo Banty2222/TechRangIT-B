@@ -84,18 +84,18 @@ const Services = () => {
                 className="card-feature group" 
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                 <div className="text-center">
-                <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="w-8 h-8 text-white" />
+                <div className="text-center">
+                  <div className="flex justify-center mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className="w-8 h-8 text-white" />
+                    </div>
                   </div>
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  {service.description}
-                </p>
+                  <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    {service.description}
+                  </p>
                 </div>
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
@@ -151,7 +151,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 ">
+      <section className="py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -163,17 +163,13 @@ const Services = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 className="btn-primary"
-                onClick={() => {
-                  const element = document.getElementById('contact');
-                  if (element) element.scrollIntoView({ behavior: 'smooth' });
-                }}
+                onClick={() => window.location.href = '/contact'}
               >
                 Contact Us Today
-              </button>
+              </button>            
               <button 
-                className="btn-secondary"
-                onClick={() => window.location.href = '/'}
-              >
+                className="btn-secondary hover:scale-105 hover:shadow-pl"
+                onClick={() => window.location.href = '/'}              >
                 View Our Work
               </button>
             </div>

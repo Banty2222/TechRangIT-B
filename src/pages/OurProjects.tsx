@@ -285,7 +285,7 @@ const OurProjects = () => {
                 Start a Project
               </button>
               <button 
-                className="btn-secondary"
+                className="btn-secondary hover:scale-105 hover:shadow-pl"
                 onClick={() => window.location.href = '/services'}
               >
                 View Our Services
