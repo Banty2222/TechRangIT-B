@@ -81,10 +81,10 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className="card-service group"
-                
+                className="card-feature group" 
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
+                 <div className="text-center">
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="w-8 h-8 text-white" />
@@ -96,6 +96,7 @@ const Services = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   {service.description}
                 </p>
+                </div>
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
