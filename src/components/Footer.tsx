@@ -35,9 +35,11 @@ const Footer = () => {
           <div className="space-y-4">
             <Link to="/" onClick={scrollToTop}>
               <h3 className="text-2xl font-bold">
+                 <img src="/src/assets/LOGO1.png" alt="TechRange IT Logo" className="inline-block h-10 w-12 mr-2 align-middle" />
                 Tech<span className="text-accent">Range</span> IT
               </h3>
             </Link>
+            
             <p className="text-gray-400 mb-4">
               Your partner in digital innovation. We build solutions that drive progress and inspire change.
             </p>

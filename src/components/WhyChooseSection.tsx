@@ -40,7 +40,7 @@ const WhyChooseSection = () => {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="card-feature animate-scale-in"
+              className="card-feature group animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="text-center">

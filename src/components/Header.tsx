@@ -45,9 +45,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" onClick={scrollToTop}>
+ <Link to="/" onClick={scrollToTop} className="flex items-center">
+ <img src="/src/assets/LOGO1.png" alt="TechRange IT Logo" className="h-8 w-auto mr-2" />
               <h1 className="text-2xl font-bold text-white">
-                Tech<span className="text-accent">Range</span> IT
+ Tech<span className="text-accent">Range</span> IT
               </h1>
             </Link>
           </div>

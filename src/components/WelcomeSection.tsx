@@ -9,7 +9,7 @@ const WelcomeSection = () => {
   };
 
   return (
-    <section className="py-20 ">
+    <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 ">
       <div className="Fullwidth px-4">
         <div className="bg-black/20 p-6 sm:p-8 md:p-12 rounded-lg shadow-xl">
           <div className="flex flex-col md:flex-row items-center gap-12">

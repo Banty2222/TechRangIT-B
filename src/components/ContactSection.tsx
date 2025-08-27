@@ -47,7 +47,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 ">
       <div className="w-full px-4">
         <div className="text-center mb-12 px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
