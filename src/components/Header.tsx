@@ -60,7 +60,11 @@ const Header = () => {
                 key={item.name}
                 to={item.href}
                 onClick={scrollToTop}
-                className="text-foreground hover:text-primary font-medium transition-colors duration-200 hover:scale-105 transform"
+                className={`font-medium transition-colors duration-200 hover:scale-105 transform ${
+                  pathname === item.href
+                    ? 'text-primary'
+                    : 'text-foreground hover:text-primary'
+                }`}
               >
                 {item.name}
               </Link>
@@ -118,7 +122,11 @@ const Header = () => {
                     scrollToTop();
                   }}
 
-                  className="block w-full text-left px-3 py-2 text-foreground hover:text-primary font-medium transition-colors duration-200"
+                  className={`block w-full text-left px-3 py-2 font-medium transition-colors duration-200 ${
+                    pathname === item.href
+                      ? 'text-primary'
+                      : 'text-foreground hover:text-primary'
+                  }`}
 
                 >
 

@@ -31,16 +31,21 @@ const Hero: React.FC = () => {
           <p className="text-lg sm:text-xl md:text-2xl font-medium text-gray-200 max-w-3xl mx-auto mb-12 animate-child delay-2 [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">
             We deliver cutting-edge technology solutions that drive growth, efficiency, and success for your business.
           </p>
+          
+          <div className="text-center mt-12"></div>
           <button
-  href="#contact"
-  onClick={(e) => handleNavClick(e, '#contact')}
-  className="btn-primary bg-gradient-to-r from-accent to-corporate-blue 
-             text-white font-bold rounded-lg 
+  
+  onClick={() =>
+    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  className=" bg-gradient-to-r from-accent to- corporate-blue-600 text-white font-bold py-5 px-6 rounded-lg
              shadow-lg transform transition duration-300
-             hover:scale-105 hover:shadow-lg"            
+             hover:scale-105 hover:shadow-pl"
 >
   Get Started
-</button>
+  </button>
+  
       </div>
     </section>
   );
