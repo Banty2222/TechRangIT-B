@@ -173,7 +173,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 className="w-full bg-gradient-to-r from-accent to-corporate-blue 
-                           text-white font-bold py-3 px-6 rounded-md shadow-md 
+ btn-primary py-3 px-6 rounded-md shadow-md
                            hover:shadow-lg hover:scale-105 transition-all duration-300 
                            disabled:opacity-75 disabled:cursor-not-allowed"
               >

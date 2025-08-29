@@ -82,10 +82,7 @@ const ServicesSection = () => {
   onClick={() =>
     document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
   }
-  className=" bg-gradient-to-r from-accent to - corporate-blue-600 text-white font-bold py-5 px-6 rounded-lg
-             shadow-lg transform transition duration-300
-             hover:scale-105 hover:shadow-pl"
->
+  className="btn-primary transform transition duration-300 hover:scale-105 hover:shadow-xl">
   Get Started Today
 </button>
 

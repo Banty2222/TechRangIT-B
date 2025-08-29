@@ -147,20 +147,20 @@ const ContactUs = () => {
       {/* Contact Form and Info */}
       <section className="py-20">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-12">
-            {/* Contact Information */}
-            <div className="lg:col-span-1 space-y-6">
-              <div>
+          <div className="grid lg:grid-cols-3 gap-12 lg:items-stretch">
+            {/* Contact Information - Left Column */}
+            <div className="lg:col-span-1 flex flex-col space-y-6">
+              <div className="flex-1 flex flex-col justify-center">
                 <h2 className="text-2xl font-bold text-foreground mb-4">
                   Get In Touch
                 </h2>
-                <p className="text-base text-muted-foreground leading-relaxed mb-6">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   We're here to help you transform your business with innovative technology solutions. 
                   Reach out to us and let's discuss how we can accelerate your digital journey.
                 </p>
               </div>
 
-              <div className="card-3d p-6">
+              <div className="card-3d p-6 flex-1 flex flex-col justify-center">
                 <h3 className="text-lg font-semibold text-foreground mb-4">
                   Why Choose TechRange IT?
                 </h3>
@@ -180,28 +180,6 @@ const ContactUs = () => {
                 </ul>
               </div>
 
-              <div className="card-3d p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-4">
-                  Response Time
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  We typically respond to inquiries within:
-                </p>
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="text-xs text-muted-foreground">Email:</span>
-                    <span className="text-xs font-medium text-primary">2-4 hours</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-xs text-muted-foreground">Phone:</span>
-                    <span className="text-xs font-medium text-primary">Immediate</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-xs text-muted-foreground">Form:</span>
-                    <span className="text-xs font-medium text-primary">24 hours</span>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Contact Form */}
