@@ -1,0 +1,34 @@
+[33m9989041[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Home page buttons
+[33m5d43057[m  service page, our project page
+[33mbe0274e[m  Service Page
+[33mdf90d5e[m Commit recent changes
+[33m01c5f23[m contact section , hero section , servicesection
+[33m93b6d59[m  service Page, about us page ,welcomesection
+[33m9d60bc0[m services page,footer
+[33m9ccf774[m  abot us page
+[33m0a7aa47[m  contactsection , welcomsection and herosection buttons
+[33m6e33ec5[m contactsection and welcomesection
+[33mec3a638[m servicessections
+[33ma1dbc7b[m  contactsection
+[33m359bf96[m welcomesection
+[33mca69956[m  contactsection
+[33mb0b7178[m welcomesection
+[33m38694db[m contactsection
+[33m8b8b388[m header abd footer an also all pages navigations
+[33m6895564[m  Welcomesection
+[33m6d14655[m on header section
+[33m1261a6f[m contactsection page
+[33mf23febd[m contactsection changes
+[33mfd3e2b3[m Reverted Contact Us page to previous state
+[33mdfb9063[m footer background color
+[33m5530cfc[m hero section get started btton
+[33mfe7f43d[m feat: Make company logo/name clickable in header and footer, add smooth scroll, fix Contact Us page rendering and background, and remove background from service cards on Services page.
+[33m3a6c56b[m contact us
+[33m24f790e[m Social mediabar
+[33m0cf0fd8[m Social mediabar
+[33m8d65d19[m footer section
+[33mc9294ec[m Background
+[33md504572[m 'Hero section changes
+[33m149bfa8[m new chnages want to commit
+[33mb3d5243[m style: update background and header styles
+[33mf298e9f[m Initialized workspace with Firebase Studio
